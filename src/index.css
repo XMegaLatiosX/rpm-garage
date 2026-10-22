@@ -1,51 +1,45 @@
 @import "tailwindcss";
 
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Oswald", "Inter", ui-sans-serif, system-ui, sans-serif;
 
-@theme { 
-  --color-background: #f1f5f9;
-  --color-container: #f8fafc;
-  --color-container-hover: #e2e8f0;
+  --color-background: #0b0f14;
+  --color-container: #1f2937;
+  --color-container-hover: #374151;
+  --color-graphite: #111827;
 
-  --color-primary: #2563eb;
-  --color-secondary: #0ea5e9;
-  --color-tertiary: #64748b;
+  --color-primary: #facc15;
+  --color-primary-hover: #eab308;
+  --color-secondary: #ef4444;
 
-  --color-title: #0f172a;
+  --color-title: #f9fafb;
+  --color-text: #d1d5db;
+  --color-text-muted: #9ca3af;
 
-  --color-text: #334155;
-  --color-text-hover: #1d4ed8;
-
-  --color-text-muted: #64748b;
-  --color-alt-text: #2563eb;
+  --color-whatsapp: #25d366;
+  --color-whatsapp-hover: #1ebe5a;
 }
 
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-background: #0f172a;       
-    --color-container: #1e293b;        
-    --color-primary: #3b82f6;          
-    --color-secondary: #38bdf8;        
-    --color-tertiary: #94a3b8;         
-    --color-title: #f8fafc;            
-    --color-text: #cbd5e1;             
-    --color-alt-text: #38bdf8;         
-    --color-text-muted: #64748b;       
-    --color-text-hover: #60a5fa;       
-    --color-container-hover: #334155;  
+  body {
+    @apply bg-background text-text font-sans antialiased;
+  }
+
+  ::selection {
+    @apply bg-primary text-black;
   }
 }
 
-.dark {
-  --color-background: #0f172a;       
-  --color-container: #1e293b;        
-  --color-primary: #3b82f6;          
-  --color-secondary: #38bdf8;        
-  --color-tertiary: #94a3b8;         
-  --color-title: #f8fafc;            
-  --color-text: #cbd5e1;             
-  --color-alt-text: #38bdf8;         
-  --color-text-muted: #64748b;       
-  --color-text-hover: #60a5fa;       
-  --color-container-hover: #334155;  
+@utility stripe-accent {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    var(--color-primary) 0 12px,
+    #000 12px 24px
+  );
 }
