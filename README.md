@@ -1,16 +1,32 @@
-# React + Vite
+# RPM Garagem — template de site para oficina mecânica
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Site institucional para oficina mecânica, pronto para personalizar e colocar no ar.
 
-Currently, two official plugins are available:
+🔗 **Demo:** [rpmgarage.vercel.app](https://rpmgarage.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## O que tem
 
-## React Compiler
+- Hero com chamada para orçamento
+- Seções de serviços, sobre e depoimentos
+- Contato com endereço, telefone e e-mail
+- Botão flutuante de WhatsApp
+- Layout responsivo (celular primeiro)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Personalização
 
-## Expanding the ESLint configuration
+Todos os dados da oficina (nome, telefone, WhatsApp, endereço, serviços) ficam em um único arquivo: `src/data/site.js`. Trocou ali, o site inteiro atualiza.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Stack
+
+React · Vite · Tailwind CSS · React Router · React Icons
+
+## Rodando localmente
+
+```bash
+npm install
+npm run dev
+```
+
+---
+
+Feito por [Julio Souza](https://www.linkedin.com/in/juliosouza-dev) · precisa de um site assim? juio.alves.souza@gmail.com
